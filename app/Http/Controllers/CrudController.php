@@ -43,7 +43,7 @@ class CrudController extends Controller
 
         $this->validate($request, [
             'name' => 'required',
-            'email' => 'required|email|unique:users,email'
+            'email' => 'required|email|unique:cruds'
         ]);
 
         $crud->create($request->all());
@@ -90,7 +90,7 @@ class CrudController extends Controller
 
         $this->validate($request, [
             'name' => 'required',
-            'email' => 'required|email|unique:users,email'
+            'email' => 'required|email'
         ]);
 
         $update->update($input);
