@@ -2,10 +2,8 @@
 LaraCrud Is A Crud Application With Laravel-5.4.8
 In this crud system using Sqlite Database.
 
-
-<p align="left">
-
 ## Index Page
+
 <img src="http://image.prntscr.com/image/1e889994266c46afbdf9db6af9411dc0.png" alt="Index Page from themeyellow.com">
 
 ## Add New User Page
@@ -20,4 +18,3 @@ In this crud system using Sqlite Database.
 ## Delete User Page
 <img src="http://image.prntscr.com/image/96e50d2c3da54a1f920e01076f9ff271.png" alt="Delete User Page from themeyellow.com">
 
-</p>
