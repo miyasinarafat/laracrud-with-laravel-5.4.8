@@ -6,6 +6,11 @@
             <h2 class="text-center">Welcome to crud with laravel Application.</h2>
             <div class="mt50 mb20">
                 <a href="create" class="btn btn-default">Add New User</a>
+
+               <form action="/search" method="get">
+                   <input type="text" class="form-control" name="search" placeholder="search...">
+                   <button type="submit" class="btn btn-success">Search</button>
+               </form>
             </div>
             @if(Session::has('delete_message'))
                 <div class="alert alert-success text-center">
@@ -15,7 +20,6 @@
             <table class="table table-bordered table-responsive mb50">
                 <thead>
                 <tr>
-                    <th>#</th>
                     <th>ID</th>
                     <th>Name</th>
                     <th>Email</th>
@@ -24,11 +28,8 @@
                 </thead>
 
                 <tbody>
-                <? $i = 0; ?>
                 @foreach($allUser as $oneUser)
-                    <? $i++; ?>
                     <tr>
-                        <td>{{ $i }}</td>
                         <td>{{ $oneUser->id }}</td>
                         <td>{{ $oneUser->name }}</td>
                         <td>{{ $oneUser->email }}</td>

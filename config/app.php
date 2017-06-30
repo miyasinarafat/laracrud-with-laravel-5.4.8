@@ -167,7 +167,10 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
-
+        // Search
+        Laravel\Scout\ScoutServiceProvider::class,
+        
+DamianTW\MySQLScout\Providers\MySQLScoutServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -179,6 +182,9 @@ return [
 
         //form helper
         Collective\Html\HtmlServiceProvider::class,
+
+        // IDE Helper
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],
 

@@ -10,15 +10,16 @@
             <hr>
             <form method="post" action="store">
                 <div class="form-group">
-                    <input type="text" name="name" class="form-control">
+                    <input type="text" name="name" placeholder="name" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" class="form-control">
+                    <input type="email" name="email" placeholder="email" class="form-control">
                 </div>
                 <div class="form-group">
                     <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                     <button type="submit" class="btn btn-success">Add User</button>
                 </div>
+                
                 @if(count($errors) > 0)
                     <div class="alert alert-danger">
                         <ul>

@@ -112,4 +112,9 @@ class CrudController extends Controller
 
         return back();
     }
+
+    public function search(Request $request)
+    {
+        return Crud::search($request->search)->get();
+    }
 }

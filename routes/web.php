@@ -19,3 +19,4 @@ Route::get('show/{user}', 'CrudController@show');
 Route::get('edit/{user}', 'CrudController@edit');
 Route::patch('update/{id}', 'CrudController@update');
 Route::delete('delete/{id}', 'CrudController@delete');
+Route::get('search', 'CrudController@search');
