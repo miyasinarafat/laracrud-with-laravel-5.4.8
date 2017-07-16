@@ -169,6 +169,7 @@ return [
         Laravel\Tinker\TinkerServiceProvider::class,
         // Search
         Laravel\Scout\ScoutServiceProvider::class,
+        TCG\Voyager\VoyagerServiceProvider::class,
         
 DamianTW\MySQLScout\Providers\MySQLScoutServiceProvider::class,
         /*

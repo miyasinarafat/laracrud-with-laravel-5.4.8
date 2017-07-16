@@ -8,6 +8,7 @@ use Laravel\Scout\Searchable;
 class Crud extends Model
 {
 	use Searchable;
+    protected $datas = ['created_at','updated_at'];
     /**
      * fillable array for data storing permission
      *

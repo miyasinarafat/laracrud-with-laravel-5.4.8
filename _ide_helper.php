@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.4.27 on 2017-06-30.
+ * Generated for Laravel 5.4.27 on 2017-07-16.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -12552,6 +12552,195 @@ namespace Collective\Html {
     }         
 }
     
+namespace TCG\Voyager\Facades {
+
+    class Voyager {
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function model($name)
+        {
+            return \TCG\Voyager\Voyager::model($name);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function modelClass($name)
+        {
+            return \TCG\Voyager\Voyager::modelClass($name);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function useModel($name, $object)
+        {
+            return \TCG\Voyager\Voyager::useModel($name, $object);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function formField($row, $dateType, $dataTypeContent)
+        {
+            return \TCG\Voyager\Voyager::formField($row, $dateType, $dataTypeContent);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function afterFormFields($row, $dataType, $dataTypeContent)
+        {
+            return \TCG\Voyager\Voyager::afterFormFields($row, $dataType, $dataTypeContent);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function addFormField($handler)
+        {
+            return \TCG\Voyager\Voyager::addFormField($handler);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function addAfterFormField($handler)
+        {
+            return \TCG\Voyager\Voyager::addAfterFormField($handler);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function formFields()
+        {
+            return \TCG\Voyager\Voyager::formFields();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function setting($key, $default = null)
+        {
+            return \TCG\Voyager\Voyager::setting($key, $default);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function image($file, $default = '')
+        {
+            return \TCG\Voyager\Voyager::image($file, $default);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function routes()
+        {
+            return \TCG\Voyager\Voyager::routes();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function can($permission)
+        {
+            return \TCG\Voyager\Voyager::can($permission);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function canOrFail($permission)
+        {
+            return \TCG\Voyager\Voyager::canOrFail($permission);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function canOrAbort($permission, $statusCode = 403)
+        {
+            return \TCG\Voyager\Voyager::canOrAbort($permission, $statusCode);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function getVersion()
+        {
+            return \TCG\Voyager\Voyager::getVersion();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function addAlert($alert)
+        {
+            return \TCG\Voyager\Voyager::addAlert($alert);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */
+        public static function alerts()
+        {
+            return \TCG\Voyager\Voyager::alerts();
+        }
+        
+        /**
+         * 
+         *
+         * @param string|\TCG\Voyager\Model|\TCG\Voyager\Collection $model
+         * @return bool 
+         * @static 
+         */
+        public static function translatable($model)
+        {
+            return \TCG\Voyager\Voyager::translatable($model);
+        }
+        
+    }         
+}
+    
     
 namespace {
 
@@ -14605,6 +14794,8 @@ namespace {
     class Form extends \Collective\Html\FormFacade {}
     
     class Html extends \Collective\Html\HtmlFacade {}
+    
+    class Voyager extends \TCG\Voyager\Facades\Voyager {}
     
 }
 
